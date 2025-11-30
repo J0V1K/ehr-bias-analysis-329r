@@ -28,7 +28,43 @@ This project investigates whether AI-generated discharge summaries exhibit the s
 
 ## Key Findings
 
-The analysis reveals statistically significant differences in word usage across racial groups. We also find that GPT-generated summaries diminish the .
+The analysis reveals differences in word usage across racial groups. We also find that GPT-generated summaries diminish the contextual differences while maintaining underlying treatment disparities.
+
+
+
+### Racial Disparities in Original EHR Discharge Summaries
+
+**1. Language Patterns and Personalization**
+- **Black and Hispanic patients**: High clustering in word usage patterns, suggesting less variety in symptom descriptions and greater focus on rote instructions
+- **White patients**: More diverse language patterns, more personalized discharge summaries
+- **Formality gap**: "Dr" appears significantly more often in White patient records compared to Black/Hispanic records, indicating doctors introduce themselves more completely or refer to care professionals more frequently for White patients
+
+**2. Treatment Focus Differences (Fighting Words Analysis)**
+- **White patients**: Frequently recommended "rehab," "therapy," "treatment" with emphasis on follow-up care and context for recommendations
+- **Black and Hispanic patients**: Strong association with "dialysis," "diabetes," "sugar," "insulin" - focus on chronic disease management with direct prescriptions but less contextual explanation
+- **Notable disparities**:
+  - "Pain" correlates with "care" for White patients but "bleeding" for Black patients
+  - "Alcohol" prominent in Hispanic discharge summaries but absent in White patient top 100 words
+  - "Emergency" appears less urgent in Asian patient records
+  - "Nurse," "recommend," and "treatment" more common in White records
+
+**3. Intersectional Findings**
+- Pain and nausea strongly associated with White women compared to White men
+- Blood sugar disparities persist across gender within racial groups
+- Hispanic men and women show concerning patterns suggesting health disparities in genital health
+
+### AI-Generated Summary Analysis (GPT-3.5)
+
+**4. Homogenization with Lost Context**
+- **Surface uniformity masks inequality**: Generated summaries converge to similar, flat tone across all racial groups despite underlying records showing significant differences
+- **Critical context loss**: AI summaries omit important details like "high blood pressure" and "insulin" mentions, stating only final treatment plans without motivating explanation
+- **Perpetuation of existing bias**: While White patients receive context for treatment recommendations in original records, AI summaries extend the pattern of giving non-White patients direct prescriptions without justification
+- **Tone issues**: Summaries are "overly confident, tonally callous, and not responsive to different health needs of different populations"
+- **Impersonal approach**: Despite prompts emphasizing patient-centered care, summaries addressed medical professionals and discussed patients in abstract, impersonal terms
+
+**Critical Conclusion**: "Identical treatment does not mean equitable treatment" - AI-generated summaries appear similar across groups but describe fundamentally different types of care (preventive/rehabilitative for White patients vs. chronic disease management for minorities). This apparent equality actually perpetuates and potentially exacerbates existing healthcare disparities. Consider the conclusion of the RegLab's Fairness through Difference Awareness paper.
+
+**Recommendation**: General-purpose AI models should NOT be used to summarize health records without significant interrogation of the prompt, data, and healthcare system involved. Summarization requires human-in-the-loop feedback and cannot be automated without risk of harm.
 
 ---
 
