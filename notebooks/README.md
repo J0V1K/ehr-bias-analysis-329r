@@ -15,11 +15,11 @@ Identifies statistically significant differences in word usage across racial gro
 - Effect size calculation
 - Comprehensive interpretation with caveats
 
-**What's Fixed:**
-- ✅ Added FDR correction for multiple comparisons
-- ✅ Integrated `statistical_analysis.py` module
-- ✅ No Google Colab dependencies
-- ✅ Uses `src/data_loader.py`
+**What's New:**
+- Added FDR correction for multiple comparisons
+- Integrated `statistical_analysis.py` module
+- No Google Colab dependencies
+- Uses `src/data_loader.py`
 
 ---
 
@@ -33,10 +33,10 @@ Trains Word2Vec embeddings on discharge instructions and visualizes word distrib
 - PCA dimensionality reduction
 - Visual comparison across racial groups
 
-**What's Fixed:**
-- ✅ Fixed critical lambda bug (would crash)
-- ✅ Added markdown documentation
-- ✅ Cleaned text processing
+**What's New:**
+- Fixed critical lambda bug (would crash)
+- Added markdown documentation
+- Cleaned text processing
 
 ---
 
@@ -51,10 +51,10 @@ Applies pre-trained sentiment analysis to assess tone differences in discharge i
 - Comprehensive limitations discussion
 
 **What's Fixed:**
-- ✅ Completely rewritten from 42-cell mess to focused 16-cell analysis
-- ✅ Removed Google Colab code
-- ✅ Added statistical testing
-- ✅ Discusses medical context limitations
+- Completely rewritten from 42-cell mess to focused 16-cell analysis
+- Removed Google Colab code
+- Added statistical testing
+- Discusses medical context limitations
 
 
 ---
@@ -70,9 +70,8 @@ Generates discharge summaries using GPT-3.5 for comparison with clinician-writte
 - Cost estimation and ethical considerations
 
 **What's Fixed:**
-- ✅ Added proper error handling
-- ✅ No Google Colab dependencies
-- ✅ Comprehensive documentation
+- Added proper error handling
+- No Google Colab dependencies
 
 ---
 
