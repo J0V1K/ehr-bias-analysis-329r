@@ -4,7 +4,7 @@
 
 This repository contains a comprehensive analysis of racial bias in Electronic Health Record (EHR) discharge instructions using multiple NLP techniques.
 
-This project uses the MIMIC-IV dataset, which requires credentialed access. See [PhysioNet](https://physionet.org/) for data access requirements.
+This project uses the MIMIC-IV dataset, which requires credentialed access. See [PhysioNet](https://physionet.org/content/mimiciv/3.1/) for data access requirements.
 
 ---
 
