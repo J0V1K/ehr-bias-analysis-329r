@@ -1,0 +1,124 @@
+# EHR Bias Analysis - Git Ignore File
+
+# Environment and Secrets
+.env
+*.key
+credentials.json
+secrets/
+
+# Data Files (NEVER commit PHI/sensitive data)
+data/
+*.csv
+*.xlsx
+*.json
+*.jsonl
+!data/README.md  # Keep the README explaining how to get data
+
+# MIMIC-IV Data (protected by DUA)
+mimic-iv/
+mimic_data/
+
+# Model Outputs
+results/
+outputs/
+*.pkl
+*.pickle
+*.h5
+*.pt
+*.pth
+models/
+checkpoints/
+
+# Generated Summaries
+GPTSummaries/
+GPTSummariesSet2/
+**/summaries/
+
+# Logs
+logs/
+*.log
+wandb/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.jupyter/
+*.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# IDE Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Documentation builds
+docs/_build/
+site/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+.cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Large files (use Git LFS if needed)
+*.zip
+*.tar.gz
+*.rar
+.env

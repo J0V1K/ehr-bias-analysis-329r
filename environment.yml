@@ -1,0 +1,42 @@
+# Minimal Conda Environment for EHR Bias Analysis
+# Create: conda env create -f environment.yml
+# Activate: conda activate ehr-bias
+
+name: ehr-bias
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python
+  - python=3.10
+
+  # Core Data Science (essential)
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+
+  # Visualization (essential)
+  - matplotlib
+  - seaborn
+
+  # Statistics (essential)
+  - statsmodels
+
+  # NLP (essential)
+  - nltk
+  - gensim
+
+  # Utilities
+  - tqdm
+  - jupyter
+  - ipywidgets
+
+  # Pip-only packages
+  - pip
+  - pip:
+    - python-dotenv
+    - convokit
+    - openai
